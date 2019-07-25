@@ -25,6 +25,7 @@ class DiceTester{
         let arr = [];
         var randomNumbers = [], numberOfOccurences = [], prev;
         if(this.sides === 6){
+        //if a die is rolled an a nummber occurs more than 40% therefore the die is weighted(not fair)
         var fairDie = Math.round(0.4*this.sides)
         for(var s = 1; s <= this.sides; s++) {
             var m = Math.floor(Math.random() * this.sides);
